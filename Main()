@@ -39,17 +39,6 @@ void loop() {
   //voiceControl();
 }
 
-int ultrasonic() {
-  digitalWrite(Trig, LOW);
-  delayMicroseconds(4);
-  digitalWrite(Trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(Trig, LOW);
-  long t = pulseIn(Echo, HIGH);
-  long cm = t / 29 / 2;
-  return cm;
-}
-
 void forward() {
   M4.setSpeed(255);
   M1.run(FORWARD);
