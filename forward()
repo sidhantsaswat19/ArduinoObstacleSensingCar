@@ -1,0 +1,9 @@
+void forward() {
+  M4.setSpeed(255);
+  M1.run(FORWARD);
+  M2.run(FORWARD);
+  M3.run(FORWARD);
+  M4.run(FORWARD);
+  delay(10);
+  M4.setSpeed(Speed);
+}
