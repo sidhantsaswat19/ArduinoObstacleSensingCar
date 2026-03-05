@@ -1,0 +1,24 @@
+void Obstacle() {
+  distance = ultrasonic();
+  if (distance <= 30) {
+    Stop();
+    backward();
+    delay(100);
+    Stop();
+    L = leftSee();
+    servo.write(spoint);
+    delay(800);
+    R = rightSee();
+    servo.write(spoint);
+    if (L > R) {
+      left();
+      delay(500);
+    } else {
+      right();
+      delay(500);
+    }
+    Stop();
+  } else {
+    forward();
+  }
+}
