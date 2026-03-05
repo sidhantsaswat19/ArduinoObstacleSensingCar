@@ -39,13 +39,6 @@ void loop() {
   //voiceControl();
 }
 
-void backward() {
-  M1.run(BACKWARD);
-  M2.run(BACKWARD);
-  M3.run(BACKWARD);
-  M4.run(BACKWARD);
-}
-
 void right() {
   M1.run(BACKWARD);
   M2.run(BACKWARD);
