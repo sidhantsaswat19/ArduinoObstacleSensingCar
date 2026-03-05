@@ -1,0 +1,6 @@
+int rightSee() {
+  servo.write(20);
+  delay(800);
+  Left = ultrasonic();
+  return Left;
+}
