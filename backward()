@@ -1,6 +1,8 @@
 void backward() {
-  M1.run(BACKWARD);
-  M2.run(BACKWARD);
-  M3.run(BACKWARD);
-  M4.run(BACKWARD);
+  M1.run(FORWARD);
+  M2.run(FORWARD);
+  M3.run(FORWARD);
+  M4.run(FORWARD);
+  delay(10);
+  M4.setSpeed(Speed);
 }
